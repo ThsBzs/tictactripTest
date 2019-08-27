@@ -1,0 +1,195 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    ;
+    background-image: url("../images/back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header{
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 4px rgba(48,50,58,.6);
+}
+
+.header > h2 {
+    font-size: 44px;
+}
+.header > h3{
+    font-size: 20px;
+    margin-bottom: 55px
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+/*Blocs*/
+.left-bloc, .right-bloc{
+    border-radius: 10px;
+    padding: 15px 15px;
+    background-color: white;
+    width: 450px;
+}
+
+
+/*Bloc de gauche*/
+/*Formulaire*/
+.left-bloc > h3{
+    color: #323E42;
+}
+.location, .dates{
+    padding-bottom: 15px;
+}
+input{
+    background-color: #F6F7FA;
+    border: 1px solid #DCE3E6;
+    background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+    width: 400px;
+    height: 40px;
+}
+input[type=text]:focus{
+    outline: 1px solid #01C3A7;
+}
+.origin, .depart{
+    border-radius: 10px 10px 0px 0px;
+}
+.destination, .arrivee{
+    border-radius: 0px 0px 10px 10px;
+}
+.origin{
+	background-image: url("../images/departure.png");
+}
+.destination{
+	background-image: url("../images/arrival.png");
+}
+.depart{
+	background-image: url("../images/departure_date.png");
+}
+.arrivee{
+	background-image: url("../images/arrival_date.png");
+}
+.travellers{
+    border: 1px solid #DCE3E6;
+    padding-left: 20px;
+    width: 400px;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url("../images/passeger.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #F6F7FA;
+}
+.voyageurs{
+    border-style: none;
+    padding-left: 20px;
+    width: 150px;
+    background-color: #F6F7FA;
+}
+/*boutons de fin de formulaire*/
+.form-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+}
+.coupon{
+    color: #01C3A7;
+    font-size: 12px;
+    margin-right: 80px;
+}
+#submit{
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    width: 150px;
+    background-color: #01C3A7;
+    color: white;
+    border-style: none !important;
+}
+
+/*Séparateur central*/
+.separator{
+    width: 15px;
+}
+
+
+/*Bloc de droite*/
+.explain-header{
+    border-radius: 10px 10px 0px 0px;
+    height: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    background-color: #21314D;
+    margin: -15px -15px;
+    color: white;
+    
+}
+.explain-list{
+    margin-top: 40px;
+}
+span{
+    display: block;
+    float: left;
+    background: center no-repeat #21314D;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: -15px;
+}
+
+#index{
+    background-image: url("../images/index.png");
+    margin-right: 15px;
+}
+#index2{
+    background-image: url("../images/index2.png");
+    margin-right: 15px;
+}
+#payCards{
+    background-image: url("../images/payCards.png");
+    margin-right: 15px;
+}
+
+li{
+    list-style-type: none;
+}
+
+li > div{
+    margin-left: 40px;
+}
+.explain-title{
+    margin-bottom: -10px; 
+    font-weight: bold;
+    color: #01C3A7;
+}
+/*Séparateur horizontal*/
+.down-separator{
+    margin: auto;
+    background-color: #DCE3E6;
+    width: 430px;
+    height: 1px;
+}
+/*Boutons playstores*/
+.app-container{
+    text-align: center;
+}
+.app-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.app-buttons > span {
+    margin: 15px 15px;
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.appStore{
+    background-image: url("../images/appStore.png");
+}
+.playStore{
+    background-image: url("../images/playStore.png");
+}
