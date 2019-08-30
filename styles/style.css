@@ -1,8 +1,7 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    ;
     background-image: url("../images/back.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 .header{
@@ -16,7 +15,7 @@ body{
 }
 .header > h3{
     font-size: 20px;
-    margin-bottom: 55px
+    margin-bottom: 55px;
 }
 
 .main{
@@ -42,51 +41,64 @@ body{
 .location, .dates{
     padding-bottom: 15px;
 }
-input{
-    background-color: #F6F7FA;
+input, #city-container{
+    opacity: .5;
     border: 1px solid #DCE3E6;
-    background-position: left;
-	background-repeat: no-repeat;
-	padding-left: 20px;
+    background-color: #F6F7FA;
+    background-position: 2%;
+    background-repeat: no-repeat;
+	padding-left: 35px;
     width: 400px;
     height: 40px;
 }
 input[type=text]:focus{
-    outline: 1px solid #01C3A7;
+    opacity: 1;
+    border: 1px solid #01C3A7;
+    outline: none;
 }
-.origin, .depart{
+#origin, #depart{
     border-radius: 10px 10px 0px 0px;
 }
-.destination, .arrivee{
+#destination, #arrivee{
     border-radius: 0px 0px 10px 10px;
 }
-.origin{
+#origin{
 	background-image: url("../images/departure.png");
 }
-.destination{
+#destination{
 	background-image: url("../images/arrival.png");
 }
-.depart{
+#depart{
 	background-image: url("../images/departure_date.png");
 }
-.arrivee{
+#arrivee{
 	background-image: url("../images/arrival_date.png");
 }
+/*Ajout de voyageurs*/
 .travellers{
     border: 1px solid #DCE3E6;
-    padding-left: 20px;
-    width: 400px;
+    padding-left: 25px;
+    width: 410px;
     border-radius: 10px 10px 10px 10px;
-    background-image: url("../images/passeger.png");
-    background-repeat: no-repeat;
-    background-position: left;
+    background: #F6F7FA url("../images/passenger.png") 2% no-repeat;
+}
+#voyageurs{
+    text-align: left;
+    border-style: none;
+    padding-left: 10px;
+    width: 370px;
     background-color: #F6F7FA;
 }
-.voyageurs{
-    border-style: none;
-    padding-left: 20px;
-    width: 150px;
-    background-color: #F6F7FA;
+#add{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #F6F7FA url("../images/plus.png") center no-repeat;
+    background-size: 15px;
+    border: none;
+    border-left: 1px solid #DCE3E6;
+    border-radius: 0px 10px 10px 0px;
+    
 }
 /*boutons de fin de formulaire*/
 .form-footer{
@@ -96,17 +108,28 @@ input[type=text]:focus{
     padding-top: 15px;
 }
 .coupon{
+    padding-top: 15px;
+    text-decoration: none;
     color: #01C3A7;
     font-size: 12px;
     margin-right: 80px;
 }
+.coupon:hover{
+    text-decoration: underline;
+}
+
 #submit{
+    padding-left: 6px;
     border-radius: 5px 5px 5px 5px;
     text-align: center;
     width: 150px;
     background-color: #01C3A7;
     color: white;
     border-style: none !important;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #01aa91;
 }
 
 /*Séparateur central*/
@@ -186,10 +209,36 @@ li > div{
     width: 130px;
     border-radius: 5px;
 }
-
+.appStore:hover, .playStore:hover{
+    cursor: pointer;
+}
 .appStore{
     background-image: url("../images/appStore.png");
 }
 .playStore{
     background-image: url("../images/playStore.png");
+}
+
+/*Liste des villes*/
+#city-container{
+    padding-left: 0px;
+    height: auto;
+    border-radius: 10px 10px
+}
+#city-container li{
+    background: #F6F7FA url("../images/locate.png") 2% no-repeat;
+    padding-top: 15px;
+    padding-left: 30px;
+    min-height: 35px;
+    border-bottom: 1px solid #DCE3E6;
+    border-top: 1px solid #DCE3E6;
+}
+
+#city-container li:hover{
+    opacity: 1 !imporant;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    background-color: #DCE3E6;
+    
 }

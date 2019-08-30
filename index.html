@@ -15,20 +15,21 @@
 	<div class="main">
 		<div class="left-bloc">
 			<h3>Quel est votre trajet ?</h3>
-			<form>
+			<form id="form">
 				<div class="location">
-					<input class="origin" type="text" required="true" placeholder="Saisissez votre gare de départ...">
-					<input class="destination" type="text" required="true" placeholder="Saisissez votre gare d'arrivée...">
+					<input id="origin" type="text" required="true" placeholder="Saisissez votre gare de départ...">
+					<input id="destination" type="text" required="true" placeholder="Saisissez votre gare d'arrivée...">
 				</div>
 				<div class="dates">
-					<input class="depart" type="text" required="true" placeholder="Aller">
-					<input class="arrivee" type="text" required="true" placeholder="Retour">
+					<input id="depart" type="text" required="true" placeholder="Aller">
+					<input id="arrivee" type="text" required="true" placeholder="Retour">
 				</div>
 				<div class="travellers">
-					<input class="voyageurs" type="button" value="1 Adulte (26-59)">
+					<input id="voyageurs" type="button" value="1 Adulte (26-59)">
+					<button type="button" id="add"></button>
 				</div>
 				<div class="form-footer">
-				    <p class="coupon">Utiliser un coupon de réduction</p>
+				    <a class="coupon" href="#">Utiliser un coupon de réduction</a>
 				    <input id="submit" type="submit" value="RECHERCHER">
 				</div>
 			</form>
@@ -36,7 +37,7 @@
         <div class="separator">
         </div>
         <div class="right-bloc">
-            <div class="explain">
+            <div id="explain">
                 <h3 class="explain-header">Les petits plus de Trainline</h3>
                 <div class="explain-list">
                     <ul>
@@ -51,7 +52,7 @@
                             <span id="index2"></span>
                              <div>
 			                     <p class="explain-title">Cartes de réduction</p>
-			                     <p>Elles sont toutes acceptées, comme vos cartes de fidélité</p>
+			                     <p>Elles sont toutes acceptées, comme vos cartes de fidélité.</p>
 			                 </div>
 			             </li>
 			             <li>
@@ -63,10 +64,7 @@
 			             </li>
                     </ul>
                 </div>
-            </div>
-            <div class="update">
-			     <!--Contiendra les éléments mis à jour en JS-->
-            </div>
+            
             <p class="down-separator"> </p>
             <div class="app-container">
                 <p>L'app leader pour voyager en train et en bus en Europe</p>
@@ -75,9 +73,17 @@
                     <span class="playStore"></span>
                 </div>
             </div>
+            </div>
+            <div id="update" style="display: none">
+            	<h3 id="depart-title">Choisissez une gare de départ</h3>
+            	<h3 id="arrivee-title" style="display: none">Choisissez une gare d'arrivée</h3>
+            	<ul id="city-container">
+            		<!--Contiendra les éléments mis à jour en JS-->
+            	</ul>
+            </div>
         </div>
 	</div>
 
-<script type="text/javascript" src="./scripts/main.js"></script>
+<script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
